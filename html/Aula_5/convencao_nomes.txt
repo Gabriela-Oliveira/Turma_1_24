@@ -1,0 +1,50 @@
+Camel case
+Camel case deve começar com a primeira letra minúscula e a primeira letra de cada nova palavra subsequente maiúscula:
+
+coisasParaFazer
+
+idadeDoAmigo
+
+valorFinal
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Pascal case
+Também conhecido como “upper camel case” ou “capital case”, pascal case combina palavras colocando todas com a primeira letra maiúscula:
+
+CoisasParaFazer
+
+IdadeDoAmigo
+
+ValorFinal
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Snake case
+Em snake case, conhecido também como “underscore case”, utilizamos underline no lugar do espaço para separar as palavras. 
+Quando o snake case está em caixa alta, ele é chamado de “screaming snake case”:
+
+- coisas_para_fazer
+
+- idade_do_amigo
+
+- valor_final
+
+- PRIMEIRO_NOME
+
+- LISTA_INICIAL
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+KABAB CASE
+Kebab case utiliza o traço para combinar as palavras. Quando o kebab case está em caixa alta, ele é chamado de “screaming kebab case”:
+
+- coisas-para-fazer
+
+- idade-do-amigo
+
+- valor-final
+
+- PRIMEIRO-NOME
+
+- LISTA-INICIAL

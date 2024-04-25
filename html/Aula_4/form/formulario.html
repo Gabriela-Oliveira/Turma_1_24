@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- NÃO USAREMOS AS DIVS ASSIM, COMO EU EXPLIQUEI, FOI SÓ PARA 
+        CONSEGUIRMOS VISUALIZAR MELHOR O FORMULÁRIO.
+    -->
+    
+    <h1>Formulário</h1>
+    <form action="http://localhost:3003/alunos" method="GET">
+        <div>
+            <input type="text" name="nome" placeholder="Nome Completo">
+        </div>
+
+        <div>
+            <input type="password" name="senha" placeholder="Senha">
+        </div>
+
+        <div>
+            <label>Sexo</label>
+
+            <input type="radio" name="sexo" value="mac"> Masculino
+            <input type="radio" name="sexo" value="fem"> Feminino
+        </div>
+
+        <div>
+            <input type="number" name="idade" placeholder="Idade">
+        </div>
+
+        <div>
+            <select name="estado">
+                <option value="rj">Rio de Janeiro</option>
+                <option value="ba">Bahia</option>
+                <option value="ce">Ceará</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="checkbox">
+        </div>
+
+        <div>
+            <textarea name="obs" cols="10" rows="5"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Matricula</button>
+        </div>
+
+    </form>
+</body>
+</html>
