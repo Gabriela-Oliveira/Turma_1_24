@@ -1,0 +1,39 @@
+#main {
+    width: 220px;
+    height: 300px;
+    border: 1px solid black; 
+    display: flex;
+    /* Centralize os alinhamentos de todos os itens do elemento flexível <div>: */
+    /* align-items: center; */
+    /* Os itens são posicionados no início do contêiner: */
+    /* align-items: flex-start; */
+    /* Os itens são posicionados no final do contêiner: */
+    /* align-items: flex-end; */
+    /* Os itens são posicionados na linha de base do contêiner: */
+    /* align-items: baseline; */
+    /* Os itens são esticados para caber no contêiner: */
+    /* align-items: stretch; */
+
+
+    /* aling-content */
+    /* A align-contentpropriedade modifica o comportamento da propriedade flex-wrap . É semelhante a align-items , mas em vez de alinhar itens flexíveis, ele alinha linhas flexíveis.
+    Nota: Deve haver várias linhas de itens para que esta propriedade tenha algum efeito! */
+
+    width: 700px;
+    height: 300px;
+    border: 1px solid #c3c3c3;
+    display: flex;
+    flex-wrap: wrap;
+
+    /* align-content: center; */
+    /* align-content: flex-end; */
+    /* align-content: flex-start; */
+    /* align-content: space-between; */
+  }
+  
+  #main div {
+    flex: 1;
+    border: 1px solid black;
+    /* display: flex;
+    align-items: center; */
+  }

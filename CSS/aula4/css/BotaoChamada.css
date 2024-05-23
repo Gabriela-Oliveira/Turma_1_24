@@ -1,0 +1,52 @@
+.encerra {
+    background-color: #EA4335;
+    margin: 20px;
+    width: 50px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: width 1s, height 2s;
+}
+
+.encerra:hover {
+    opacity: 0.7;
+    width: 80px;
+    height: 50px;
+}
+
+i {
+    color: white;
+}
+
+.transition {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+.transition:hover {
+    width: 150px;
+}
+
+.transition-timing-function {
+    width: 200px;
+    height: 100px;
+    background: rgb(40, 228, 102);
+    transition: width 2s;
+  }
+  
+  #div1 {transition-timing-function: linear;}
+  #div2 {transition-timing-function: ease;}
+  #div3 {transition-timing-function: ease-in;}
+  #div4 {transition-timing-function: ease-out;}
+  #div5 {transition-timing-function: ease-in-out;}
+  
+  .transition-timing-function:hover {
+    width: 300px;
+  }

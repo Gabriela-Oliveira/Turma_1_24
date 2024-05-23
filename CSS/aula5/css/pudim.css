@@ -1,0 +1,13 @@
+#main {
+    display: flex;
+}
+
+#main div {
+    width: 33%;
+    height: 100%;
+    border: 1px solid;
+}
+
+h3, p {
+    text-align: center;
+}

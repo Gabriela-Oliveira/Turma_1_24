@@ -1,0 +1,33 @@
+#padraTartaruga {
+    margin: 10px;
+    color: blue;
+}
+#pedraSino {
+    margin: 10px;
+    color: rgb(0, 255, 4);
+}
+#pedraElefante {
+    margin: 10px;
+    color: rgb(162, 18, 197);
+}
+
+.titulo2 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0px auto;
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

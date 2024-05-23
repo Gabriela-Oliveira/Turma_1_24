@@ -1,0 +1,22 @@
+input, textarea, select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    display: inline;
+}
+
+body {
+    color: rgb(217,222,213);
+    background: rgb(17,27,33);
+}
+
+.tema {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    color: rgb(217,222,213);
+}

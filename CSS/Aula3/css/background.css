@@ -1,0 +1,34 @@
+body {
+    /* background-image: url("https://cdn.shopify.com/s/files/1/0010/1561/1510/products/papel-de-parede-estrelas-azul_1.jpg?v=1598840289"); */
+
+    background-image: url("paper.gif");
+    background-color: #cccccc;
+    /* background-image: url("https://d3puay5pkxu9s4.cloudfront.net/curso/2960/card_imagen.jpg"); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+table {
+    width: 75%;
+}
+
+img {
+    width: 50%;
+    height: 200px;
+}
+
+#grad1 {
+    height: 400px;
+    background-image: linear-gradient(green, blue);
+}
+
+h1 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    /* text-align: right;
+    text-transform: uppercase;
+    text-decoration: underline; */
+}

@@ -1,0 +1,41 @@
+/* div p {
+    background-color: yellowgreen;
+}
+
+div > h1 {
+    background-color: rgb(81, 255, 0);
+} */
+
+h1 ~ p {
+    background-color: brown;
+}
+
+/* h1 + p {
+    background-color: aqua;
+} */
+
+a:visited {
+    background-color: rgb(61, 43, 226);
+}
+
+a:visited {
+    color: brown;
+}
+
+a:hover {
+    background: green;
+}
+
+a:active {
+    background: yellow;
+}
+
+h2::before {
+    content: url(https://usagif.com/wp-content/uploads/gify/scott-pilgrim-takes-off-drinking-coffee-usagif.gif);
+}
+
+::marker { 
+    color: red;
+}
+
+

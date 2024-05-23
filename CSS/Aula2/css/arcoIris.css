@@ -1,0 +1,35 @@
+#tabela {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.cor-vermelho {
+    background: rgb(247,0,0);
+}
+
+.cor-laranja {
+    background: rgb(246,124,0);
+}
+
+.cor-amarelo {
+    background: rgb(244,231,32);
+}
+
+.cor-verde {
+    background: rgb(55,175,72);
+}
+
+.cor-azul {
+    background: rgb(40,166,219);
+}
+
+.cor-anil {
+    background: rgb(45,47,141);
+}
+
+.cor-violeta {
+    background: rgb(99,44,140);
+}

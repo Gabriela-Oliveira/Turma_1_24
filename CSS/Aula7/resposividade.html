@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consulta de Mídia</title>
+<style>
+    /* Estilos para dispositivos de todos os tamanhos */
+
+    .desktop-only {
+        display: none; /* Inicialmente oculta em todos os dispositivos */
+    }
+
+    /* Consulta de mídia para dispositivos com largura mínima de 768px (típico de desktops) */
+    @media only screen and (min-width: 768px) {
+        .desktop-only {
+            display: block; /* Exibido apenas em dispositivos maiores que 768px */
+        }
+    }
+</style>
+</head>
+<body>
+
+<!-- Elemento visível apenas em desktop -->
+<div class="desktop-only">
+    Este elemento só será exibido em versões desktop.
+</div>
+
+<!-- Elemento visível em todos os dispositivos -->
+<div>
+    Este elemento será exibido em todos os dispositivos.
+</div>
+
+</body>
+</html>

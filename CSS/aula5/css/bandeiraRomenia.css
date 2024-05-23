@@ -1,0 +1,111 @@
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 300px) {
+    div {
+      flex-direction: column;
+    }
+}
+
+.azul {
+    /* width: 100px;
+    height: 100px;
+    background-color: brown;
+    animation-name: aumentar;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-play-state: running; */
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    animation-name: azul;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+    /* animation-direction: alternate-reverse;   */
+    animation-direction: forwards;  
+}
+
+@keyframes azul {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 100px;
+    }
+    
+}
+
+.amarela {
+    /* width: 100px;
+    height: 100px;
+    background-color: brown;
+    animation-name: aumentar;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-play-state: running; */
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: relative;
+    animation-name: amarela;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    /* animation-direction: alternate-reverse;   */
+    animation-direction: forwards;  
+}
+
+@keyframes amarela {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 100px;
+    }
+    
+}
+
+.vermelha {
+    /* width: 100px;
+    height: 100px;
+    background-color: brown;
+    animation-name: aumentar;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-play-state: running; */
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: vermelha;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-iteration-count: 2;
+    /* animation-direction: alternate-reverse;   */
+    animation-direction: forwards;  
+}
+
+@keyframes vermelha {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 100px;
+    }
+    
+}

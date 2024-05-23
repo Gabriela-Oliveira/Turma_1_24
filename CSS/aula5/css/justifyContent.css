@@ -1,0 +1,21 @@
+#main {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #c3c3c3;
+    display: flex;
+    /* Alinhe os itens flexíveis no centro do contêiner: */
+    /* justify-content: center; */
+    /* Alinhe os itens flexíveis no início do contêiner (este é o padrão): */
+    /* justify-content: flex-start; */
+    /* Alinhe os itens flexíveis no final do contêiner: */
+    /* justify-content: flex-end; */
+    /* Exiba os itens flexíveis com espaço antes, entre e depois das linhas: */
+    /* justify-content: space-around; */
+    /* Exiba os itens flexíveis com espaço entre as linhas: */
+    /* justify-content: space-between; */
+  }
+  
+  #main div {
+    width: 70px;
+    height: 70px;
+  }

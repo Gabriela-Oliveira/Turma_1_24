@@ -1,0 +1,15 @@
+body {
+    text-align: -webkit-center;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+article {
+    width: 50%;
+}

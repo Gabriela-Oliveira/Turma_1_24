@@ -1,0 +1,19 @@
+/* quebra de linha */
+
+#main {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #c3c3c3;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap-reverse; */
+
+    /* flex-flow: row-reverse wrap; */
+    /* flex-flow: row-reverse wrap-reverse; */
+}
+
+#main div {
+    width: 50px;
+    height: 50px;
+}

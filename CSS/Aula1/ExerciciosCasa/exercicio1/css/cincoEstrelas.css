@@ -1,0 +1,65 @@
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+table {
+    width: 30%;
+    margin-left: 30px;
+    border: 1px solid;
+}
+
+thead, tbody {
+    margin-right: 50px;
+}
+
+th {
+    margin-left: 50px;
+}
+
+tr {
+    display: flex;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+}
+
+td {
+    margin-left: 100px;
+}
+
+.critario {
+    margin-left: 108px;
+}
+
+.critarios {
+    margin-right: 106px;
+}
+
+.criterios {
+    width: 20%;
+    margin-right: 20px;
+}
+
+.estrela {
+    display: contents;
+    text-align: -webkit-center;
+    width: 10px;
+}
+
+.estrelaAmarela {
+    color: yellow;  
+}
+
+.estrelaVerde {
+    color: green;  
+}
+
+.estrelaBranca {
+    color: white;  
+}
+
+

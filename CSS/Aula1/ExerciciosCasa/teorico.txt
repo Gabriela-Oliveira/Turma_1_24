@@ -1,0 +1,35 @@
+1. O que significa a sigla CSS? Em Inglês e Português.
+R. Cascading Style Sheet / folha de estilo em cascata.
+
+2. Qual a função principal, o objetivo do CSS?
+R. A função do CSS é estilizar as páginas criadas usando HTML.
+
+3. A versão atual do CSS é... 
+R. CSS3.
+
+4. Porquê é importante separar a estilização da marcação?
+R. Organiza e separa os conceitos, definindo o que é estrutura e o que é formatação. 
+   Torna-se mais produtivo, separando as tarefas.
+
+5. CSS é uma linguagem de programação? 
+R. É uma linguagem, mas não de programação.
+
+6. Em programação, o que é uma declaração?
+R. Declarações são estruturas simples de armazenamento de dados.
+   SINTAXE: propriedade: valor;
+
+7. O que são propriedades?
+R. Uma propriedade CSS é uma característica (como a cor) cujo valor define o aspecto de como o navegador deve exibir o elemento.
+   EX: Cor da fonte = color, Cor do fundo = background
+
+8. De quantas formas um elemento pode receber estilos? Descreva cada uma.
+R. 1- CSS por atributo => Permite incluir um estilo inline, adicionando o atributo style diretamente no elemento que será formatado.
+   2- Elemento Style => A tag style deve ser incluída no <head>. Ao usar essa tag, além de incluir a regra de estilo, precisamos também dizer qual objeto receberá o estilo.
+   3- Arquivo externo => Podemos criar um arquivo com a extensão .css. Para o vínculo entre o estilo e o HTML, vamos utilizar a tag de ligação <link>.
+A tag deve possuir os atributos rel e href.
+
+9. Qual a sintaxe de escrita das regras de estilo?
+R. propriedade: valor;
+
+10. Cite algumas vantagens de usar arquivos CSS externos.
+R. Organiza melhor um projeto, Mantém o HTML mais enxuto, Reaproveita o mesmo estilo em várias páginas, Permite trocar rapidamente a folha de estilos.
