@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+</head>
+<body>
+    <button onclick="variavel()">Teste</button>
+</body>
+<script>
+    function variavel() {
+        var nome;
+        console.log(nome);
+        nome = "Luiz";
+
+        //----------------------
+
+        var nome, idade;
+
+        nome = "Gabriela";
+        idade = 32;
+
+        //----------------------
+
+        var nome = "Luiz";
+        console.log(nome);
+        console.log(typeof nome);
+
+        var idade = 32;
+        console.log(nome);
+        console.log(typeof nome);
+
+        var idade1 = 8;
+
+        alert(idade1 + idade); // 6 caracteres
+        alert(nome + " " + idade); // 7 caracteres
+        // alert(nome); 
+        // alert(typeof nome);
+    }
+</script>
+</html>
