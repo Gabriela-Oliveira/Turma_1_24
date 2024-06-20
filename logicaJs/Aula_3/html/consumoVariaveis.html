@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+</head>
+<body>
+    <button onclick="soma()">Soma</button>
+    <button onclick="exemplo()">Exemplo</button>
+    <button onclick="exemplo1()">Exemplo1</button>
+</body>
+
+<script>
+    function soma() {
+        var numero1 = 10;
+        var numero2 = 28;
+
+        var soma = numero1 + numero2;
+        
+        alert(soma);
+    }
+
+    function exemplo() {
+        var numero1 = 10;
+        var numero2 = numero1;
+        
+        alert(numero2);
+    }
+
+    function exemplo1() {
+        var numero1 = 10;
+        var numero2 = 28;
+
+        numero1 = numero2;
+        
+        alert(numero1);
+        alert(numero2);
+    }
+</script>
+</html>
