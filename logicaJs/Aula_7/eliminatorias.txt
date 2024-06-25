@@ -1,0 +1,10 @@
+BOL 2 x 0 PER data: 16/11/2023
+VEN 0 x 0 EQU data: 16/11/2023
+COL 2 x 1 BRA data: 16/11/2023
+ARG 0 x 2 URU data: 16/11/2023
+CHI 0 x 0 PAR data: 16/11/2023
+PAR 0 x 1 COL data: 21/11/2023
+URU 3 x 0 BOL data: 21/11/2023
+EQU 1 x 0 CHI data: 21/11/2023
+BRA 0 x 1 ARG data: 21/11/2023
+PER 1 X 1 VEN data: 21/11/2023
