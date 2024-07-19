@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melhor de Três</title>
+</head>
+<body>
+    <script>
+        function melhorTres() {
+            var respostaCert = "branco";
+             
+            for(var i = 0; i < 3; i++) {
+                
+                for(var c = 0; c < 2; c++) {
+                    var respostaOuvinte = prompt("Usuário número: " + i + " Qual é a cor do cavalo branco de napoleão?");
+                    
+                    if (respostaOuvinte === respostaCert) {
+                        alert("Resposta EXATA! Você ganhou uma caneca personalizada.")
+                        c = 2;
+                    } else {
+                        alert("Tente novamente!")
+                    } 
+                }
+            }
+        }
+
+        // function melhorTres() {
+        //     var respostaCert = "branco";
+             
+        //     for(var i = 0; i < 3; i++) {
+                
+        //         for(var c = 0; c < 2; c++) {
+        //             var respostaOuvinte = prompt("Usuário número: " + i + " Qual é a cor do cavalo branco de napoleão?");
+                    
+        //             if(c === 1 && respostaCert !== respostaOuvinte){
+        //                 alert("Perdeu playboy!");
+        //                 break;  
+        //             }
+
+        //             if (respostaOuvinte === respostaCert) {
+        //                 alert("Resposta EXATA! Você ganhou uma caneca personalizada.")
+        //                 c = 2;
+        //             } else {
+        //                 alert("Tente novamente!")
+        //             } 
+        //         }
+        //     }
+        // }
+
+        // function melhorTres() {         
+        //     for(var i = 0; i < 3; i++) {
+        //         outroFor(i);
+        //     }
+        // }
+
+        // function outroFor(i) {
+        //     var respostaCert = "branco";
+
+        //     for(var c = 0; c < 2; c++) {
+        //         var respostaOuvinte = prompt("Usuário número: " + i + " Qual é a cor do cavalo branco de napoleão?");
+                
+        //         if (respostaOuvinte === respostaCert) {
+        //             alert("Resposta EXATA! Você ganhou uma caneca personalizada.");
+        //             c = 2;
+        //         } else {
+        //             alert("Tente novamente!");
+        //         } 
+        //     }
+        // }
+
+        // melhorTres();
+
+        melhorTres();
+    </script>
+</body>
+</html>

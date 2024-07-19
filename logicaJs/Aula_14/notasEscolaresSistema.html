@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de notas escolares</title>
+</head>
+<body>
+    <script>
+        //média 7.0
+
+        class Alunos {
+            nome
+            modulo
+            nota_4
+            nota_6
+            media
+        }
+
+        var aluno1 = new Alunos();
+        aluno1.nome = "Albert Einstein";
+        aluno1.modulo = "Física";
+        aluno1.nota_4 = 0;
+        aluno1.nota_6 = 0;
+        aluno1.media = 0;
+
+        var aluno2 = new Alunos();
+        aluno2.nome = "Tony Stark";
+        aluno2.modulo = "Robótica";
+        aluno2.nota_4 = 0;
+        aluno2.nota_6 = 0;
+        aluno2.media = 0;
+
+        var aluno3 = new Alunos();
+        aluno3.nome = "Sherlock";
+        aluno3.modulo = "História";
+        aluno3.nota_4 = 0;
+        aluno3.nota_6 = 0;
+        aluno3.media = 0;
+
+        var listaAlunos = [];
+
+        listaAlunos.push(aluno1);
+        listaAlunos.push(aluno2);
+        listaAlunos.push(aluno3);
+
+        function media() {
+            var maiorNota = {}
+            var mediaBaixa = 0;
+
+            for (var i = 0; i < listaAlunos.length; i++) {
+
+                listaAlunos[i].nota_4 = parseInt(prompt("Qual é a primeira nota do aluno " + listaAlunos[i].nome))
+                listaAlunos[i].nota_6 = parseInt(prompt("Qual é a segunda nota do aluno " + listaAlunos[i].nome))
+
+                var medias = (listaAlunos[i].nota_4 + listaAlunos[i].nota_6);
+
+                listaAlunos[i].media = medias;
+
+                if (i > 0 && medias > listaAlunos[i - 1].media) {
+                    maiorNota = listaAlunos[i];
+                }
+
+                if(medias >= 7){
+                    console.log("O aluno " + listaAlunos[i].nome + " está aprovado :)");
+                    console.log("Relatório média: nota1 = " + listaAlunos[i].nota_4 + " nota2 = " + listaAlunos[i].nota_6 + " média = " + medias);
+                }else{
+                    mediaBaixa++;
+                    console.log("O aluno " + listaAlunos[i].nome + " está reprovado :(");
+                    console.log("Relatório média: nota1 = " + listaAlunos[i].nota_4 + " nota2 = " + listaAlunos[i].nota_6 + " média = " + medias);
+                }
+
+            }
+            console.log("O aluno com a moir média é: " + maiorNota.nome + " com a média de: " + maiorNota.media);
+            console.log("Temos " + mediaBaixa + " abaixo da média!");
+        }
+
+        media();
+    </script>
+</body>
+</html>
