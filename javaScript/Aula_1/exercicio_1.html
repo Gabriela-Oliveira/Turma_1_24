@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores</title>
+</head>
+<body>
+    <p id="vermelho" class="vermelho" style="background-color: red; height: 10px;"></p>
+    <p class="preto" style="background-color: black; height: 10px;"></p>
+    <p class="vermelho" style="background-color: red; height: 10px;"></p>
+    <p class="preto" style="background-color: black; height: 10px;"></p>
+
+    <button onclick="cores()">Cores!</button>
+
+</body>
+
+<script>
+    function cores() {
+        var vermelhoClass = document.getElementsByClassName("vermelho");
+        console.log(vermelhoClass);
+        console.log(vermelhoClass.length);
+
+        var vermelhoId = document.getElementById("vermelho");
+        console.log(vermelhoId);
+        // console.log(vermelhoId.length);
+    }
+</script>
+</html>

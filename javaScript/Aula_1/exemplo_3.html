@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pega / Adiciona</title>
+</head>
+<body>
+    <p id="pegaValor">Papai Noel</p>
+    <p id="recebeValor"></p>
+</body>
+
+<script>
+    var valor1 = document.getElementById("pegaValor").innerText;
+    console.log(valor1);
+
+    var valor2 = document.getElementById("recebeValor").innerHTML = valor1;
+    console.log(valor2);
+</script>
+</html>

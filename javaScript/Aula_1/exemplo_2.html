@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de tag</title>
+</head>
+<body>
+    <h2 class="class1" id="id1">TESTE 1</h2>
+    <p class="class2" id="id2">TESTE 2</p>
+    <p class="class3" id="id3">TESTE 3</p>
+    <div class="class4" id="id4">TESTE 4</div>
+    <P class="class3">TESTE 5 COM class3</P>
+</body>
+
+<script>
+    document.getElementById("id1").style.color = "aqua";
+    document.getElementById("id2").style.color = "magenta";
+    document.getElementById("id3").style.color = "blue";
+    document.getElementById("id4").style.color = "red";
+
+    const elementosClass3 = document.getElementsByClassName("class3");
+    console.log(elementosClass3);
+
+    elementosClass3[1].style.backgroundColor = "blue";
+</script>
+</html>
