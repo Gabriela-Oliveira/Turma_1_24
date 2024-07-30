@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Promoção Relâmpago</title>
+</head>
+<body>
+    <!-- 
+        - função calculo minuto impar 10% ok
+        - função calculo minuto par 5% ok
+        - const que vai ter uma referencia de uma função anônima, que irá descobrir se o minuto é impar ou par
+    -->
+
+    <script>
+        function descontoImpar(valor) {
+            var desconto = (10 / 100 * valor);
+            return valor - desconto
+        }
+
+        function descontoPar(valor) {
+            var desconto = (5 / 100 * valor);
+            return valor - desconto
+        }
+
+        const descontoParImpar = function (minuto, valor) {
+            if(minuto % 2 === 0) {
+                return descontoPar(valor);
+            } else {
+                return descontoImpar(valor);
+            }
+        }      
+        
+        console.log(descontoParImpar(15, 100));
+        console.log(descontoParImpar(14, 100));
+    </script>
+</body>
+</html>
