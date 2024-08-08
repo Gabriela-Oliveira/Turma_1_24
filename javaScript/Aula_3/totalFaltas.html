@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total de faltas</title>
+</head>
+<body>
+</body>
+
+<script>
+    // faltando constructor... não é o melhor jeito de criar a class.
+    class Aluno {
+        nome
+        modulo
+        presenca
+    }
+
+    var aluno1 = new Aluno();
+    aluno1.nome = "Albert Einstein";
+    aluno1.modulo = "Física";
+    aluno1.presenca = false;
+
+    var aluno2 = new Aluno();
+    aluno2.nome = "Tony Stark";
+    aluno2.modulo = "Robótica";
+    aluno2.presenca = false;
+
+    var aluno3 = new Aluno();
+    aluno3.nome = "Sherlock";
+    aluno3.modulo = "História";
+    aluno3.presenca = false;
+
+    var listaAlunos = [];
+
+    listaAlunos.push(aluno1, aluno2, aluno3);
+
+    function totalFaltas() {
+        const faltas = (falta) => falta.presenca === false;
+        const faltantes = listaAlunos.filter(faltas);
+
+        console.log(faltantes);
+        console.log(faltantes.length + " Aluno(s) faltante(s)");
+    }
+
+    totalFaltas();
+</script>
+</html>

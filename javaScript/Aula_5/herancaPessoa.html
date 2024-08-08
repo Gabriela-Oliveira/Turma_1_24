@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros elétricos</title>
+</head>
+<body>
+</body>
+<script>
+    // class Pessoa {
+    //     constructor(nome, idade, cpf, altura, peso) {
+    //         this.nome = nome;
+    //         this.idade = idade;
+    //         this.cpf = cpf;
+    //         this.altura = altura;
+    //         this.peso = peso;
+    //     }
+    // }
+
+    // class PessoaPcd extends Pessoa {
+    //     constructor(nome, idade, cpf, altura, peso, deficiencia) {
+    //         super(nome, idade, cpf, altura, peso);
+    //         this.deficiencia = deficiencia;
+    //     }
+    // }
+
+    // const pessoa = new Pessoa("Juliete", "17", "123.123.123-12", "1.67", "69");
+    // const pessoaPcd = new PessoaPcd("Juliete", "17", "123.123.123-12", "1.67", "69", "Autista");
+
+    // console.log(pessoa);
+    // console.log(pessoaPcd);
+
+    class Pessoa {
+        constructor(pessoa) {
+            this.nome = pessoa.nome;
+            this.idade = pessoa.idade;
+            this.cpf = pessoa.cpf;
+            this.altura = pessoa.altura;
+            this.peso = pessoa.peso;
+        }
+    }
+
+    class PessoaPcd extends Pessoa {
+        constructor(pessoa, pessoPcd) {
+            super(pessoa);
+            this.deficiencia1 = pessoPcd.deficiencia1;
+            this.deficiencia2 = pessoPcd.deficiencia2;
+            this.deficiencia3 = pessoPcd.deficiencia3;
+            this.deficiencia4 = pessoPcd.deficiencia4;
+        }
+    }
+
+    const pessoa1 = {
+        nome: "Juliete",
+        idade: "17",
+        cpf: "123.123.123-12",
+        altura: "1.67",
+        peso: "69"
+    }
+
+    const pessoaDeficiencia = {
+        deficiencia1: "Autista",
+        deficiencia2: "Autista",
+        deficiencia3: "Autista",
+        deficiencia4: "Autista",
+    }
+
+    const pessoa = new Pessoa(pessoa1);
+    const pessoaPcd = new PessoaPcd(pessoa1, pessoaDeficiencia);
+
+    console.log(pessoa);
+    console.log(pessoaPcd);
+    
+</script>
+</html>

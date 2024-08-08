@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort</title>
+</head>
+<body>
+</body>
+
+<script>
+    function sortCre() {
+        const numeros = [ 104, 140, 14, 41, 10];
+        numeros.sort((a, b) => a - b);
+
+        console.log(numeros);
+    }
+
+    sortCre();
+
+    function sortDecre() {
+        const numeros = [140, 104, 14, 41, 10];
+        numeros.sort((a, b) => b - a);
+
+        console.log(numeros);
+    }
+
+    sortDecre();
+</script>
+</html>

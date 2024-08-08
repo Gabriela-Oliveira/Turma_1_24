@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Carros Semi Novos</title>
+</head>
+<body>
+</body>
+    <script>
+        var listaCarros = []
+
+        var carroFusca = {
+            nome: 'Volkswagen',
+            modelo: 'Fusca',
+            cor: 'Preto',
+            peso: 900,
+            placa: 'BRA2E19', 
+            ano: 2023
+        }
+
+        var carroChevette = {
+            nome: 'Chevrolet',
+            modelo: 'Chevette',
+            cor: 'Preto',
+            peso: 900,
+            placa: 'BRA2E19',
+            ano: 1992 
+        }
+
+        var carro3 = {
+            nome: 'Fiat',
+            modelo: 'Uno',
+            cor: 'Cinza',
+            peso: 750,
+            placa: 'BRA5P63',
+            ano: 2024
+        }
+
+        listaCarros.push(carroFusca);
+        listaCarros.push(carroChevette);
+        listaCarros.push(carro3);
+
+        var data = new Date();
+
+        const fn = (item) => console.log(data.getFullYear() - item.ano > 2 ? `${item.nome} *-* USADO` : `${item.nome} *-* SEMINOVO`);
+        listaCarros.forEach(fn);
+
+        
+    </script>
+
+</script>
+</html>

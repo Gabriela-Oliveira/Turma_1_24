@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For</title>
+</head>
+<body>
+</body>
+
+<script>
+    function forOf1() {
+        const lista = ["🚗", "🚙", "🚓"];
+
+        console.log('For com variável controladora');
+        
+        for (var i = 0; i < lista.length; i++) {
+            console.log(lista[i]);
+        }
+
+        console.log('For Of');
+
+        for (const carro of lista) {
+            console.log(carro);
+        }
+    }
+
+    // forOf1();
+
+    function forEach1() {
+        const frutas = ["🍑", "🍓", "🍍", "🍉", "🍇"];
+        const fn = (item) => console.log("Fruta:", item);
+        frutas.forEach(fn);
+    }
+
+    forEach1();
+</script>
+</html>

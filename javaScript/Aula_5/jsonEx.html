@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON x Object</title>
+</head>
+<body>
+</body>
+<script>
+    // Para trasformar um objeto em JSON
+    const carro = { 
+        modelo: "Brasília", 
+        ano: 1967 
+    };
+
+    const texto = JSON.stringify(carro);
+
+    console.log(carro);
+    console.log(texto);
+
+    // Para transformar um JSON em um objeto
+    const texto1 = '{ "modelo": "Brasília", "ano": 1967 }';
+    const carro1 = JSON.parse(texto1);
+
+    console.log(texto1);
+    console.log(carro1);
+    
+</script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+<body>
+</body>
+
+<script>
+    function filtro() {
+        const frutas = ["🍌", "🍓", "🍍", "🍌", "🍉", "🍇"];
+        // const fn = (item) => item === "🍌" || item === "🍉";
+        const fn = (item) => item === "🍌";
+        const bananas = frutas.filter(fn);
+
+        console.log(frutas);
+        console.log(bananas);
+    }
+
+    filtro();
+</script>
+</html>

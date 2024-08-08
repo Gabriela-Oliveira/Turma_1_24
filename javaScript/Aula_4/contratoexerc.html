@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contrato de Doces</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .contrato {
+      text-align: justify;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="contrato" class="contrato"></div>
+
+  <script>
+    // Dados de exemplo
+    const pessoa = {
+      nome: 'Maria Silva',
+      endereco: 'Rua das Flores, 123, Bairro Jardim, Cidade Exemplo',
+      cpf: '123.456.789-00'
+    };
+
+    const servico = {
+      descricao: 'Fornecimento de 1000 unidades de brigadeiros gourmet',
+      data: '01 de Setembro de 2024',
+      valor: 'R$ 500,00'
+    };
+
+    // Template de contrato
+    const contratoTemplate = `
+      <h1>Contrato de Prestação de Serviços</h1>
+      <p>Este contrato é celebrado entre <strong>${pessoa.nome}</strong>, inscrito(a) no CPF sob o nº <strong>${pessoa.cpf}</strong>, residente e domiciliado(a) em <strong>${pessoa.endereco}</strong> (doravante denominado(a) "Contratante") e a Loja de Doces (doravante denominada "Contratada").</p>
+      
+      <p>O objeto deste contrato é a prestação de serviços pela Contratada à Contratante, conforme a descrição abaixo:</p>
+      <p>Serviço: <strong>${servico.descricao}</strong></p>
+      <p>Data de entrega: <strong>${servico.data}</strong></p>
+      <p>Valor: <strong>${servico.valor}</strong></p>
+      
+      <p>A Contratante compromete-se a efetuar o pagamento conforme estipulado e a Contratada compromete-se a entregar os produtos conforme a descrição e no prazo estabelecido.</p>
+      
+      <p>Este contrato é regido pelas leis brasileiras e quaisquer questões decorrentes deste contrato serão resolvidas no foro da comarca da sede da Contratada.</p>
+      
+      <p>Assinatura da Contratante: _______________________________</p>
+      <p>Assinatura da Contratada: _______________________________</p>
+    `;
+
+    // Exibir o contrato na página
+    document.getElementById('contrato').innerHTML = contratoTemplate;
+  </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veiculos semi novos</title>
+</head>
+<body>
+</body>
+
+<script>
+    var listaCarros = [];
+
+    var carroFusca = {
+        nome: 'Volkswagen',
+        modelo: 'Fusca',
+        cor: 'Preto',
+        peso: 900,
+        placa: 'BRA2E19',
+        ano: 1992 
+    }
+
+    var carroChevette = {
+        nome: 'Chevrolet',
+        modelo: 'Chevette',
+        cor: 'Preto',
+        peso: 900,
+        placa: 'BRA2E19',
+        ano: 1885 
+    }
+
+    var carroFiat = {
+        nome: 'Fiat',
+        modelo: 'Uno',
+        cor: 'cinza',
+        peso: 750,
+        placa: 'BRA2P25',
+        ano: 2023
+    }
+
+    listaCarros.push(carroFusca, carroChevette, carroFiat);
+
+    var data = new Date();
+
+    function semiNovos() {
+        const carros = (carro) => (data.getFullYear() - carro.ano) < 3;
+        const carrosMenoresTres = listaCarros.filter(carros);
+
+        console.log(carrosMenoresTres);
+    }
+
+    semiNovos();
+
+</script>
+</html>

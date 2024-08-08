@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Literais</title>
+</head>
+<body>
+</body>
+
+<script>
+    const texto = `posso escrever 
+        um texto com
+quebra de linha no editor`;
+
+console.log(texto);
+
+////////////////////////////////////////////////////////////////////////////////////
+
+    // const texto1 = 'Soma ' + (2 + 2);
+
+    const texto1 = `Soma ${2 + 2}`;
+    console.log(texto1);
+
+    ////////////////////////////////////////////////////////////////////////////////////
+
+    // const texto1 = 'Soma ' + (2 + 2);
+
+    const nome = "Mariazinha";
+    const texto2 = `Boma dia ${nome}`;
+    console.log(texto2);
+
+    ////////////////////////////////////////////////////////////////////////////////////
+
+    // Três formas de se fazer a mesma coisa, utilizando uma arrow 
+    // function para a interpolação em um template string.
+
+    const hora = 19;
+
+    const texto3 = `Tenha uma boa ${(() => {
+        if (hora > 18) return "noite";
+        return "tarde";
+    })()}`;
+
+    // const teste =  (() => {
+    //     if (hora > 18) return "noite";
+    //     return "tarde";
+    // })();
+
+    // const texto3 = `Tenha uma boa ${teste}`;
+
+    // const texto3 = `Tenha uma boa ${
+    //     (() => {
+
+    //         if (hora > 18) {
+    //             return "noite";
+    //         }
+
+    //         return "tarde";
+
+    //     })()
+    // }`;
+
+    console.log(texto3);
+</script>
+</html>

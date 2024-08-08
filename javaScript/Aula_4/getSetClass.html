@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Set Class</title>
+</head>
+<body>
+</body>
+
+<script>
+    // class ContaBancaria {
+    //     constructor(saldoInicial) {
+    //         this._saldo = saldoInicial;
+    //     }
+
+    //     get pegaSaldo() {
+    //         return this._saldo;
+    //     }
+
+    //     set alterarSaldo(saldoNovo) {
+    //         if (saldoNovo >= 0) {
+    //             this._saldo = saldoNovo;
+    //         } else {
+    //             console.error("O saldo não pode ser negativo!");
+    //         }
+    //     }
+    // }
+
+    // const conta = new ContaBancaria(1000);
+    // conta.alterarSaldo = -900;
+
+    // console.log(conta.pegaSaldo);
+
+    class ContaBancaria {
+        #saldo; // Campo privado
+
+        constructor(saldoInicial) {
+            this.#saldo = saldoInicial;
+        }
+
+        get pegaSaldo() {
+            return this.#saldo;
+        }
+
+        set alterarSaldo(saldoNovo) {
+            if (saldoNovo >= 0) {
+                this.#saldo = saldoNovo;
+            } else {
+                console.error("O saldo não pode ser negativo!");
+            }
+        }
+    }
+
+const conta = new ContaBancaria(1000);
+// conta.alterarSaldo = -900;
+// this.#saldo = 600; ERRADO
+
+conta.alterarSaldo = 600;
+
+console.log(conta.pegaSaldo); // Continua sendo 1000, pois o saldo negativo não foi permitido
+
+</script>
+</html>

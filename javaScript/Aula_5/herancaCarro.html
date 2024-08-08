@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros elétricos</title>
+</head>
+<body>
+</body>
+<script>
+    class Carro {
+        constructor(nome, modelo, cor, placa, ano) {
+            this.nome = nome;
+            this.modelo = modelo;
+            this.cor = cor;
+            this.placa = placa;
+            this.ano = ano;
+        }
+    }
+
+    class CarroEletrico extends Carro{
+        constructor(nome, modelo, cor, placa, ano, duracaoBateriaRodagem) {
+            super(nome, modelo, cor, placa, ano);
+            this.duracaoBateriaRodagem = duracaoBateriaRodagem;
+        }
+    }
+
+    const carroEletrico = new CarroEletrico("Tesla Model 3", "Long Range AWD", "Azul Profundo", "EV1234", "2024", "300km");
+
+    console.log(carroEletrico);
+    
+</script>
+</html>
