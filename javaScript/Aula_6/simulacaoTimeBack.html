@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de sincrono e assincrono</title>
+</head>
+<body>
+    <button onclick="sincrono()">Síncrono</button>
+    <button onclick="assincrono()">Assíncrono</button>
+</body>
+    <script>
+        function sincrono() {
+            console.log("1. Esse é o primeiro texto que você viu");
+            console.log("2. Só cheguei no console na sequencia");
+            console.log("3. Essa instrução é a terceira, na sequencia");
+        }
+
+        function assincrono() {
+            console.log("1. Esse é o primeiro texto que você viu");
+
+            setTimeout(() => {
+                console.log("2. Só cheguei no console após 10 segundos");
+            }, 10000);
+
+            console.log("3. Essa instrução é a terceira, mas apareceu antes!");
+        }
+    </script>
+
+</html>

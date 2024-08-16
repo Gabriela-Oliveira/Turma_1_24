@@ -1,0 +1,75 @@
+* A página inicial, index.html, deverá conter:
+
+- Elemento principal
+
+- Primeiro título para seu nome
+
+- Segundo título para seu nome completo, em itálico
+
+- Seção para links das páginas novas
+
+- Rodapé com assinatura, datas ou considerações finais.
+
+- Os links devem levar para 2 páginas novas:
+
+* Currículo
+
+A página deve estar estruturada como um currículo, contendo:
+
+- Dados pessoais
+
+- Uma foto
+
+- Colocar o arquivo de foto na mesma pasta
+
+- Formação
+
+- Em formato de tabela, com colunas para a instituição e ano de formação
+
+- Lançar tanto escolaridade quanto cursos
+
+- Profissional => Criar em formato de lista numerada 
+
+Pode conter funções, profissões, linguagens de programação etc.
+
+Em ordem de importância
+
+* Sobre mim
+
+Uma página contendo seus interesses pessoais. 
+
+- Lista de tópicos, sendo cada tópico em negrito:
+
+Coisas que gosta de fazer
+
+Lista de séries que assiste
+
+Livros favoritos
+
+Qualquer outra informação de sua preferência
+
+- Estudando agora:
+
+Devem ser dispostos em “lista de definição”, contendo:
+
+Termo em itálico (nome da linguagem de programação)
+
+Descrição (texto em tamanho pequeno)
+
+Sua evolução no curso, ou alguma outra informação ou curiosidade.
+
+Total = 4,7
+____________________________________________________________________________________-
+OBS: 
+- Index: 1.5
+  - Elemento principal (NÃO)
+  - Seção para links das páginas novas (LINK DO LOCALHOST)
+  - Rodapé com assinatura, datas ou considerações finais. (<tfoot> É DE TABELA)
+
+- Curriculo 1.6
+  - Dados pessoais (NÃO)
+  - Em formato de tabela (MAL ESTRUTURADA)
+
+- Sobre 1.6
+  - Devem ser dispostos em “lista de definição”, contendo:(ESTRUTURA ERRADA)
+  - Descrição (texto em tamanho pequeno)

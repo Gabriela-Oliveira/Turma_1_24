@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="detalhes5.css">
+</head>
+<body>
+    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item">Lagocean</a>
+        </div>
+      
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="cardapio.html">Voltar</a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <input class="input" type="text" placeholder="Buscar Opção">
+                        </p>
+                        <p class="control">
+                            <button class="button is-info">Buscar</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="background-image"></div>
+    <main class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-half">
+                    <div class="detalhes-produto">
+                        <div class="imagem-produto">
+                            <img src="https://cdn.deliway.com.br/blog/base/7f8/dc3/107/receita-guioza.jpg" alt="Imagem do Produto">
+                        </div>
+                        <div class="product-info">
+                            <h2 class="title is-4">Guioza</h2>
+                            <p>É apreciado por sua combinação única de texturas crocantes e macias, bem como por seu sabor rico e delicioso.</p>
+                            <p>Geralmente é servido com molhos de mergulho, como vinagre de arroz com gengibre, molho de soja ou molho de pimenta picante, e é uma opção popular como aperitivo ou acompanhamento em restaurantes asiáticos ao redor do mundo.</p>
+                            <button class="button is-success order-button produto">Realizar Pedido</button>
+                        </div>
+                        <div class="newsletter-form">
+                            <h3 class="receba"><strong>Receber promoções deste produto</strong></h3>
+                            <br>
+                            <form>
+                                <div class="field">
+                                    <label class="label">E-mail</label>
+                                    <div class="control">
+                                        <input class="input" type="email" placeholder="Digite seu e-mail" required>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                        <label class="checkbox">
+                                            <input type="checkbox" required>
+                                            Aceito os termos de uso
+                                        </label>
+                                    </div>
+                                </div>
+                                <br>
+                                <button type="submit" class="button">Enviar</button>
+                                <p class="success-message">E-mail cadastrado com sucesso!</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function displaySuccessMessage() {
+            document.getElementById("success-message").style.display = "block";
+        }
+    </script>
+</body>
+</html>

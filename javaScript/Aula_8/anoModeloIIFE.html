@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ano do carro</title>
+</head>
+<body>
+</body>
+<script>
+    let ano = (function (ano, mes) {
+        let anoModelo = ano;
+        
+        if(mes >= 7) {
+            anoModelo += 1;
+        }
+
+        return console.log(`O ano de fabricação é: ${ano} e o ano do modelo é: ${anoModelo}`);
+    })(2020, 8);
+</script>
+</html>

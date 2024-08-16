@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UF</title>
+</head>
+<body>
+    <ul id="lista"></ul>
+</body>
+    <script>
+        const estados = async () => {
+    const IBGEestados = await fetch ("https://servicodados.ibge.gov.br/api/v1/localidades/estados");
+    let estadosBrasil = await IBGEestados.json();
+
+    console.log(estadosBrasil);
+
+    lista(estadosBrasil);
+}
+
+function lista(listaEstados){
+
+let lista = document.getElementById("lista");
+
+for (let i = 0; i < listaEstados.length; i++) {
+    let documento = document.createElement("li");
+    documento.innerHTML = listaEstados[i].nome;
+    lista.appendChild(documento);
+
+}
+
+
+}
+
+        estados();
+    </script>
+</html>

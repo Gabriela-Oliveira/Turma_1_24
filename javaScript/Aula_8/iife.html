@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFFE</title>
+</head>
+<body>
+</body>
+<script>
+
+    // Função que precisa ser invocada.
+    const soma1 = (a, b) => {
+        console.log(a + b);
+    }
+    
+    // Função que de invocação imediata.
+    let soma = (function (a, b) {
+        return console.log(a + b);
+    })(5, 5);
+
+    soma1(2, 2);
+</script>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD</title>
+</head>
+<body>
+    <button onclick="requisicaoGetTodos()">GET TODOS</button>
+    <button onclick="requisicaoGetId()">GET ID</button>
+    <button onclick="requisicaoPost()">POST</button>
+    <button onclick="requisicaoPut()">PUT</button>
+    <button onclick="requisicaoDelete()">DELETE</button>
+
+    <script>
+        let responseParse = [];
+
+        function acessarIdObj(listaGet) {
+            for (let i = 0; i < listaGet.length; i++) {
+                console.log(listaGet[i].id);
+            }
+        }
+
+        const requisicaoGetTodos = async () => {
+           fetch('http://localhost:3000/pessoa/').then(function calback(resp) {
+                console.log(resp);
+                console.log(resp.json());
+           });
+        }
+        
+        fetch('http://localhost:3000/pessoa/').then(tratarResposta).then(resultaFinal);
+
+        function tratarResposta(response) {
+            return response.json();
+        }
+
+        function resultaFinal(dados) {
+            console.log('resultaFinal');
+            console.log(dados);
+        }
+
+        // const requisicaoGetTodos = async () => {
+        //     let respose = await fetch('http://localhost:3000/pessoa/');
+        //     responseParse = await respose.json();
+            
+        //     console.log(responseParse);
+            
+        //     acessarIdObj(responseParse);
+        // }
+
+        // const requisicaoGetTodos = async () => {
+        //     let respose = await fetch('http://localhost:3000/pessoa/', {
+        //         method: "GET"
+        //     });
+        //     responseParse = await respose.json();
+
+        //     console.log(responseParse);
+        // }
+
+        // const requisicaoGetId = async (id) => {
+        //     let respose = await fetch(`http://localhost:3000/pessoa/${id}`);
+        //     responseParse = await respose.json();
+
+        //     console.log(responseParse);
+        // }
+
+        const requisicaoGetId = async () => {
+            let respose = await fetch('http://localhost:3000/pessoa/1');
+            responseParse = await respose.json();
+
+            console.log(responseParse);
+        }
+
+        const requisicaoPost = async () => {
+            let respose = await fetch('http://localhost:3000/pessoa', {
+                method: 'POST',
+                body: JSON.stringify(
+                    {
+                        nome: "Vovó mafalda",
+                        id: "9"
+                    }
+                ),
+            });
+        }
+
+        const requisicaoPut = async () => {
+            let respose = await fetch('http://localhost:3000/pessoa/2', {
+                method: 'PUT',
+                body: JSON.stringify({
+                    nome: "Lua",
+                })
+            });
+        }
+
+        const requisicaoDelete = async () => {
+            let respose = await fetch('http://localhost:3000/pessoa/8', {
+                method: 'DELETE'
+            });
+        }
+    
+    </script>
+</body>
+</html>

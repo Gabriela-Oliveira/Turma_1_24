@@ -1,0 +1,97 @@
+Página inicial, index.html:
+
+    - Imagem de fundo
+
+    - Cabeçalho
+
+    - Logomarca do restaurante feito em texto:
+
+        - O texto deve ser estilizado em maiúsculas
+
+        - A primeira letra em cor diferente das demais
+
+        - Sombra aplicada a cada da letra
+
+        - Família de fonte escolhida no Google Fonts
+
+    - Elemento Principal
+
+    - Seção contendo o link para acesso o cardápio:
+
+        - Centralizada na página
+
+        - Fundo colorido
+
+        - Bordas arredondadas
+
+
+🔵Página cardapio.html:
+
+    - Poderá utilizar Bootstrap ou outro framework CSS.
+
+    - Barra de navegação
+
+        - Nome da loja
+
+        - Botão para voltar à página inicial 
+
+        - Campo para buscar produto
+
+    - Elemento Principal
+
+    - Container para exibir no mínimo 3 produtos por linha.
+
+    - Cada produto estará em um cartão (card)
+
+        - Imagem do produto
+
+        - Título centralizado abaixo da imagem
+
+        - Pequena descrição
+
+        - Botão para acesso à página de detalhes sobre o produto
+
+        - Ao clicar no botão, redirecionar diretamente para o produto específico
+
+        - Mínimo 6 cartões
+
+
+🔵Página detalhes.html:
+
+    - Manter barra de navegação da página anterior (Ajustando o link para voltar)
+
+    - Elemento Principal
+
+        - Seção para exibir 1 produto por vez:
+
+        - Imagem, título e descrição.
+
+        - Botão para realizar o pedido.
+
+        - Formulário para “Receber promoções” deste produto. 
+
+            - Campo para o e-mail, com placeholder
+
+            - Caixa de marcação para aceitar os “termos de uso”
+
+            - Botão enviar, que simplesmente exibe uma mensagem:
+                “E-mail cadastrado com sucesso!”
+
+    - Transição do tamanho da imagem ao passar o mouse sobre ela.
+
+    - Criar uma animação infinita à sua escolha.
+
+     Exemplo: Piscar o texto dentro do botão comprar.
+
+    obs: o que não teve: 
+        - Sem organização de pastas
+        - Aparece a mensagem antes de de clicar no enviar
+        - Sem importação de fonte da google
+
+
+
+     1- 1.8
+     2- 2.0
+     3- 1.8
+
+     total= 5.6
