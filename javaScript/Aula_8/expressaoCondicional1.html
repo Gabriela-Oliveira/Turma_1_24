@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expressão condicional</title>
+</head>
+<body>
+</body>
+
+<script>
+    const nome = prompt("Digite o seu nome");
+    const idade = parseInt(prompt("Digite sua idade"));
+
+    // const mensagem = nome && idade ? console.log(`Bem vindo ${nome}! Você tem ${idade} anos!`) : console.log(`Nome ou idade inválida!`);
+
+    if (nome && idade) {
+        console.log(`Bem vindo ${nome}! Você tem ${idade} anos!`);
+    } else {
+        console.log(`Nome ou idade inválida!`);
+    }
+     
+</script>
+</html>

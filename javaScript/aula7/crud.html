@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD</title>
+</head>
+<body>
+    <button onclick="requisicaoGetTodos()">GET TODOS</button>
+    <button onclick="requisicaoGetId()">GET ID</button>
+    <button onclick="requisicaoPost()">POST</button>
+    <button onclick="requisicaoPut()">PUT</button>
+    <button onclick="requisicaoDelete()">DELETE</button>
+    <button onclick="teste()">teste</button>
+
+    <script>
+        let responseParse = [];
+
+        const teste = async () => {
+            fetch('http://localhost:3000/pessoa/').then(function callback(response) {
+                console.log(response);
+                console.log(response.json());
+            });
+
+            
+        }
+
+        fetch('http://localhost:3000/pessoa/').then(cbResposta).then(cbFinal);
+        
+        function cbResposta(response) {
+            return response.json();
+        }
+        function cbFinal(dados) {
+            console.log(dados);
+        }
+
+
+        const requisicaoGetTodos = async () => {
+            let respose = await fetch('http://localhost:3000/pessoa/');
+            responseParse = await respose.json();
+
+            console.log(responseParse);
+        }
+
+        const requisicaoGetId = async () => {
+            let respose = await fetch('http://localhost:3000/pessoa/1');
+            responseParse = await respose.json();
+
+            console.log(responseParse);
+        }
+
+        const requisicaoPost = async () => {
+            let respose = await fetch('http://localhost:3000/pessoa', {
+                method: 'POST',
+                body: JSON.stringify({
+                    nome: "Vovó mafalda",
+                    id: "9"
+                }),
+            });
+        }
+
+        const requisicaoPut = async () => {
+            let respose = await fetch('http://localhost:3000/pessoa/2', {
+                method: 'PUT',
+                body: JSON.stringify({
+                    nome: "Lua",
+                })
+            });
+        }
+
+        const requisicaoDelete = async () => {
+            let respose = await fetch('http://localhost:3000/pessoa/3', {
+                method: 'DELETE'
+            });
+        }
+    
+    </script>
+</body>
+</html>

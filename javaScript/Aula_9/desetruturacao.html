@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desestruturação</title>
+</head>
+<body>
+</body>
+<script>
+    // const frutas = ["🍊", "🍌", "🍉", "🍍"];
+
+    // const [laranja, banana, ,abacaxi] = frutas;
+
+    // // const laranja = frutas[0];
+    // // const banana = frutas[1];
+    // // const abacaxi = frutas[3];
+
+    // console.log(laranja);
+    // console.log(banana);
+    // console.log(abacaxi);
+
+    ///////////////////////////////////////////////////////////////////////////////
+
+    const frutas = ["🍊", "🍌", "🍉", "🍍"];
+
+    const [laranja, ...resto] = frutas;
+
+    console.log(laranja);
+    console.log(resto);
+
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest params</title>
+</head>
+<body>
+</body>
+<script>
+
+    // function feira(...frutas) {
+    //     console.log(frutas);
+    //     console.log(frutas.length);
+    // }
+
+    // feira("🍓", "🍍", "🍋", "🍉", "🍓", "🍍", "🍋", "🍉");
+
+    function feira(uva, ...resto) {
+        console.log(`Tenho ${uva} e mais ${resto.length} frutas`);
+        console.log(resto);
+        
+    }
+    feira("🍇", "🥑", "🍐", "🍌", "🥥", "🍉", "🥑", "🍐", "🍌", "🥥", "🍉");
+</script>
+</html>

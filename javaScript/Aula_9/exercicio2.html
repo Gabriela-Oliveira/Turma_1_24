@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro tunado</title>
+</head>
+<body>
+</body>
+<script>
+    const carroAntigo = {
+        marca: 'Honda',
+        modelo: 'Civic',
+        ano: 2010,
+        cor: 'Prata',
+        motor: '2.0',
+        rodas: 'Aro 15',
+        som: 'Original'
+    };
+
+    console.log(carroAntigo);
+
+    const carroTunado = {
+        ...carroAntigo,
+        cor: 'Preto Fosco',
+        motor: '3.0',
+        rodas: "Aro 18",
+        turbo: true
+    }
+
+    console.log(carroTunado);
+    
+</script>
+</html>
