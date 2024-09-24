@@ -1,0 +1,10 @@
+.input-container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    margin-top: 10px;   /* Espaçamento entre as linhas */
+  }
+  
+  .inputFilmeFilho {
+    margin-right: 10px; /* Espaçamento entre o input e o texto */
+  }
+  

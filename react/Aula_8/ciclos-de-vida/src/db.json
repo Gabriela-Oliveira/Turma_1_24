@@ -1,0 +1,14 @@
+{
+    "produtos": [
+        {
+            "descricao": "Desc. 1",
+            "valor": 20.0,
+            "qtd": 35
+        },
+        {
+            "descricao": "Desc. 1",
+            "valor": 20.0,
+            "qtd": 35
+        }
+    ]
+}
