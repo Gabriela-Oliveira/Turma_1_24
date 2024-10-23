@@ -1,0 +1,11 @@
+{
+    "carros": [
+      { "id": 1, "modelo": "Fusca", "marca": "Volkswagen", "ano": 1976, "imagem": "https://www.carrobrasil.com.br/imagem_texto/20140401_130703_fusca-1.jpg"},
+      { "id": 2, "modelo": "Civic", "marca": "Honda", "ano": 2020, "imagem": "https://s2-autoesporte.glbimg.com/8AsyIQCc2_sNbOsJXNUPQI87qYw=/0x0:1920x1080/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2022/U/M/0AQABNTsW6kmItO0mGaQ/sem-titulo.jpg" },
+      { "id": 3, "modelo": "Mustang", "marca": "Ford", "ano": 2021, "imagem": "https://media.gazetadopovo.com.br/2018/06/ebc9cccbf6fa2ecd48957d780c96cd1a-gpMedium.JPG"},
+      { "id": 4, "modelo": "Corolla", "marca": "Toyota", "ano": 2022, "imagem": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS_AguMafqQYvHaeJzhAJjAGO68jJJOoTo6o_drtnXzdwq33DXZcF6j-jOX2GmjvwlbRnVEx4_S8vjqBcN7MiWgPluvKga9UuxOm5dspegVje6QJpC_Kec3kWiWNbShyVHSkWGPlEOZOqR/s1600/Toyota+Corolla+2017+%25281%2529.JPG" },
+      { "id": 5, "modelo": "Model S", "marca": "Tesla", "ano": 2023, "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYZGZcizrhRGyWltyV5ofWApFfTI3kUcYy7w&s" },
+      { "id": 6, "modelo": "Camaro", "marca": "Chevrolet", "ano": 2020, "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScbDEF9KY2Q5WXpC2GWGbB-h0ZSqOqbhdWbw&s" }
+    ]
+  }
+  

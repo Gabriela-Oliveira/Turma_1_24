@@ -4,6 +4,7 @@ import ListaTarefas from './components/ListaTarefas';
 
 function App() {
   const [tarefas, setTarefas] = useState([]);
+  const [detalhes, setDetalhes] = useState(false);
 
   const adicionarTarefa = (tarefa) => {
     setTarefas([...tarefas, { texto: tarefa, concluida: false }]);
@@ -21,6 +22,10 @@ function App() {
     setTarefas(novasTarefas);
   };
 
+  const setaDetalhes = () => {
+    setDetalhes(true);
+  }
+
   return (
     <div className="app">
       <h1>Lista de Tarefas</h1>
@@ -30,6 +35,7 @@ function App() {
         removerTarefa={removerTarefa}
         marcarConcluida={marcarConcluida}
       />
+      <button onClick={setaDetalhes}>Detalhes</button>
     </div>
   );
 }

@@ -1,0 +1,94 @@
+/listagem-de-carros
+├── src/               
+     ├── main.jsx                  # Ponto de entrada da aplicação
+     ├── App.jsx                   # Componente principal da aplicação
+     │
+     ├── components/               
+          ├── CarrosLista.jsx       # Componente que gerencia a lista de carros
+          ├── CarroCard.jsx         # Componente que exibe o card de um carro
+          ├── CarroDetalhes.jsx     # Componente que exibe detalhes de um carro selecionado
+    │
+    ├── module/              
+         ├── api.js                # Funções para interagir com a API
+    │
+    ├── css/              
+         ├── index.css             # Estilos da aplicaçãos
+│
+├── db.json                        # Banco de dados simulado
+
+Documentação:
+
+1. db.json
+Este arquivo é um banco de dados simulado em formato JSON. Ele armazena uma lista de carros, cada um com suas propriedades.
+
+Estrutura:
+ - carros: Array de objetos, onde cada objeto representa um carro.
+ - id: (número) Identificador único do carro.
+ - modelo: (string) O modelo do carro.
+ - marca: (string) A marca do carro.
+ - ano: (número) O ano de fabricação do carro.
+ - imagem: (string) URL da imagem do carro.
+
+2. api.js
+Este arquivo contém funções para interagir com a API que fornece dados dos carros. Ele importa os métodos de fetch para realizar requisições.
+
+Funções:
+ - getCarrosTodos
+   - Descrição: Faz uma requisição GET para buscar todos os carros.
+
+ - getCarrosId
+   - Parâmetros: id (número): O identificador do carro que se deseja buscar.
+   - Descrição: Faz uma requisição GET para buscar um carro específico com base por id.
+
+3. main.jsx
+Este é o ponto de entrada da aplicação. Ele configura o ambiente React e renderiza o componente principal (App).
+
+ - Funções:
+   - createRoot: Cria a raiz da aplicação React.
+   - render: Renderiza o componente App dentro do elemento HTML com o id root.
+
+
+4. App.jsx
+Este componente é responsável por renderizar o título da aplicação e incluir o componente CarrosLista.
+
+ - Estrutura:
+   - Importações: Importa React e o componente CarrosLista.
+   - Renderização: Exibe um cabeçalho e o componente CarrosLista.
+
+5. CarrosLista.jsx
+Este componente é responsável por gerenciar a lista de carros, fazendo requisições para obter os dados e renderizando os carros em forma de cartões.
+
+ - Estrutura:
+   - Estados:
+     - carros: Armazena a lista de carros.
+     - carroSelecionado: Armazena o carro que foi selecionado para visualização detalhada.
+
+   - Funções:
+     - obterCarros
+       - Descrição: Chama a função getCarrosTodos para buscar todos os carros e atualiza o estado carros.
+
+     - selecionarCarro
+       - Parâmetros:
+       - id (número): O identificador do carro selecionado.
+       - Descrição: Chama a função getCarrosId para buscar detalhes do carro selecionado e atualiza o estado carroSelecionado.
+
+     - voltarParaLista
+       - Descrição: Atualiza o estado carroSelecionado para null, retornando à lista de carros.
+
+6. CarroDetalhes.jsx
+Este componente exibe os detalhes de um carro selecionado, mostrando suas informações e permitindo que o usuário retorne à lista.
+
+ - Parâmetros:
+   - Props:
+     - carro (objeto): O carro cujos detalhes devem ser exibidos.
+     - voltar (função): Função que é chamada para voltar à lista de carros.
+
+7. CarroCard.jsx
+Este componente representa um cartão de carro que exibe informações resumidas de um carro e permite ao usuário ver mais detalhes.
+
+ - Parâmetros:
+   - Props:
+     - carro (objeto): O objeto que contém as informações do carro.
+     - selecionarCarro (função): Função que é chamada quando o botão "Mais Detalhes" é clicado.
+
+

@@ -1,0 +1,78 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Estilo para a lista de carros */
+.carros-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilo para cada card do carro */
+.carro-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: calc(25% - 20px); /* 4 cards por linha com espaçamento */
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+/* Efeito de hover para o card */
+.carro-card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para as imagens do carro */
+.carro-card img {
+    width: 180px; /* Definindo a largura fixa para a imagem */
+    height: 100px; /* Definindo a altura fixa para a imagem */
+    object-fit: cover; /* Manter a proporção e cortar se necessário */
+    border-radius: 5px;
+}
+
+/* Estilo para os detalhes do carro */
+.carro-detalhes {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px; /* Limitar a largura dos detalhes */
+    text-align: center;
+    display: flex; /* Usar flexbox para centralizar */
+    flex-direction: column; /* Alinhar em coluna */
+    align-items: center; /* Centralizar horizontalmente */
+}
+
+.carro-detalhes img {
+    width: 400px; /* Definindo a largura fixa para a imagem */
+    height: 250px; /* Definindo a altura fixa para a imagem */
+    object-fit: cover; /* Manter a proporção e cortar se necessário */
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Botão */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+/* Efeito de hover para o botão */
+button:hover {
+    background-color: #0056b3;
+}
